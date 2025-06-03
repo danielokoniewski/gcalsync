@@ -1,0 +1,24 @@
+[project]
+name = "gcalsync"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Daniel Okoniewski",email = "daniel.okoniewski@1und1.de"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-auth (>=2.40.2,<3.0.0)",
+    "fire (>=0.7.0,<0.8.0)",
+    "google-api-python-client (>=2.170.0,<3.0.0)",
+    "google-auth-httplib2 (>=0.2.0,<0.3.0)",
+    "google-auth-oauthlib (>=1.2.2,<2.0.0)"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project.scripts]
+gcalsync = "gcalsync.cli:main"

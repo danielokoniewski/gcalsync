@@ -1,0 +1,11 @@
+/credentials.json
+/.env
+/token.json
+/poetry.lock
+/poetry.toml
+/.venv/
+/.ideauv.lock
+__pycache__/
+.idea
+*.pyc
+uv.lock
